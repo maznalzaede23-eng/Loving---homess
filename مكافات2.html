@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوفينغ هومز - نظام المكافآت</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        direction: rtl;
+        background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+        color: #333;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    header {
+        background: linear-gradient(90deg, #2E7D32, #1B5E20);
+        color: white;
+        text-align: center;
+        padding: 50px 20px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+        text-transform: uppercase;
+    }
+
+    nav {
+        background-color: #1B5E20;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding: 15px 0;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        color: white;
+        font-weight: 600;
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 12px;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        background-color: #2E7D32;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    main {
+        padding: 60px 20px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .reward-box {
+        max-width: 1300px;
+        width: 100%;
+        background: #ffffff;
+        padding: 60px;
+        border-radius: 25px;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        transition: transform 0.3s;
+    }
+
+    .reward-box h2 {
+        text-align: center;
+        color: #2E7D32;
+        font-size: 42px;
+        margin-bottom: 60px;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .rewards {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 40px;
+    }
+
+    .reward {
+        position: relative;
+        border-radius: 20px;
+        overflow: hidden;
+        height: 350px;
+        cursor: pointer;
+        transition: transform 0.4s, box-shadow 0.4s;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .reward::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.4), transparent 60%);
+        z-index: 0;
+    }
+
+    .reward h3, .reward p {
+        position: relative;
+        z-index: 1;
+    }
+
+    .reward h3 {
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #2E7D32;
+        background-color: rgba(255,255,255,0.8);
+        padding: 5px 10px;
+        border-radius: 10px;
+        display: inline-block;
+    }
+
+    .reward p {
+        font-size: 16px;
+        background-color: rgba(255,255,255,0.7);
+        padding: 5px 10px;
+        border-radius: 8px;
+        line-height: 1.5;
+    }
+
+    .reward:hover {
+        transform: translateY(-12px) scale(1.05);
+        box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+    }
+
+    footer {
+        background-color: #1B5E20;
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+        font-weight: 600;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+        font-size: 16px;
+    }
+
+    @media (max-width: 768px) {
+        header {
+            font-size: 28px;
+            padding: 35px 15px;
+        }
+
+        nav a {
+            font-size: 16px;
+            padding: 8px 16px;
+        }
+
+        .reward-box {
+            padding: 40px 20px;
+        }
+
+        .reward {
+            height: 300px;
+        }
+
+        .reward h3 {
+            font-size: 20px;
+        }
+
+        .reward p {
+            font-size: 14px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<header>
+    نظام المكافآت في لوفينغ هومز
+</header>
+
+<nav>
+    <a href="الصفحة الرئيسية 1.html">الرئيسية 🏠</a>
+</nav>
+
+<main>
+    <div class="reward-box">
+        <h2>مكافآت مخصصة حسب الاتفاق مع المالك</h2>
+
+        <div class="rewards">
+
+            <div class="reward" style="background-image: url('https://images.unsplash.com/photo-1558788353-f76d92427f16?auto=format&fit=crop&w=800&q=80');">
+                <h3>مكافآت غذائية</h3>
+                <p>تقديم مكافآت غذائية مخصصة للكلاب وفق نوع الطعام المسموح به والمتفق عليه مع المالك.</p>
+            </div>
+
+            <div class="reward" style="background-image: url('https://images.unsplash.com/photo-1592194996308-7b43878e84a6?auto=format&fit=crop&w=800&q=80');">
+                <h3>مكافآت سلوكية</h3>
+                <p>مكافأة الكلاب عند الالتزام بالسلوك الجيد أو تنفيذ الأوامر حسب تعليمات المالك.</p>
+            </div>
+
+            <div class="reward" style="background-image: url('https://images.unsplash.com/photo-1592194996298-5c1c7c6675d0?auto=format&fit=crop&w=800&q=80');">
+                <h3>ألعاب وتحفيز</h3>
+                <p>استخدام ألعاب تحفيزية كمكافآت لتعزيز النشاط الذهني والبدني للكلاب.</p>
+            </div>
+
+            <div class="reward" style="background-image: url('https://images.unsplash.com/photo-1560807707-8cc77767d783?auto=format&fit=crop&w=800&q=80');">
+                <h3>مكافآت خاصة</h3>
+                <p>مكافآت يتم تحديدها خصيصًا بناءً على رغبة المالك واحتياجات الكلب الفردية.</p>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    حقوق الطبع والنشر © 2026 لوفينغ هومز
+</footer>
+
+</body>
+</html>

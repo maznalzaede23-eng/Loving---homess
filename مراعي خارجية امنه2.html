@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>مراعي خارجية آمنة - لوفينغ هومز</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background: linear-gradient(to bottom, #E8F5E9, #ffffff);
+    line-height: 1.7;
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+/* العنوان والفقرات */
+h2 {
+    text-align: center;
+    color: #2E7D32;
+    font-size: 36px;
+    margin-bottom: 25px;
+    position: relative;
+}
+h2::after {
+    content: '';
+    width: 90px;
+    height: 4px;
+    background-color: #1B5E20;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+p.description {
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 45px;
+}
+
+/* شبكة المراعي */
+.areas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+/* بطاقة كل مساحة */
+.area {
+    background: #E8F5E9;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.area:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+}
+
+.area img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.area:hover img {
+    transform: scale(1.05);
+}
+
+.area div {
+    padding: 20px;
+}
+
+.area h3 {
+    color: #1B5E20;
+    margin-bottom: 12px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.area h3 i {
+    margin-left: 8px;
+    color: #388E3C;
+}
+
+.area p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* زر CTA */
+.cta {
+    text-align: center;
+    margin-top: 40px;
+}
+.cta a {
+    background: #FF9800;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+.cta a:hover {
+    background: #F57C00;
+}
+
+/* قسم التقييمات */
+.reviews {
+    margin-top: 60px;
+}
+.review {
+    background: #F1F8E9;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.review img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.review p {
+    margin: 0;
+    color: #333;
+    font-size: 16px;
+}
+
+/* الفوتر */
+footer {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1em;
+    margin-top: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+/* تجاوب */
+@media screen and (max-width: 768px) {
+    header { font-size: 28px; padding: 30px 15px; }
+    h2 { font-size: 28px; }
+    p.description { font-size: 16px; }
+    .area div { padding: 15px; }
+    .area h3 { font-size: 20px; }
+}
+
+/* زر رجوع في الزاوية */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.back-btn:hover {
+    background-color: #1B5E20;
+}
+</style>
+</head>
+
+<body>
+    <a href="الصفحة الرئيسية 1.html" class="back-btn">← رجوع</a>
+
+<header>
+    المراعي الخارجية الآمنة
+</header>
+
+<main>
+    <div class="container">
+        <h2>مساحات خارجية طبيعية وآمنة</h2>
+        <p class="description">
+            يوفر فندق لوفينغ هومز مراعي خارجية واسعة ومغلقة بالكامل تتيح للكلاب الحركة بحرية داخل بيئة طبيعية آمنة. تم تصميم هذه المساحات بعناية لضمان السلامة والراحة مع إشراف دائم من الفريق المختص.
+        </p>
+
+        <div class="areas">
+            <div class="area">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=400&h=300&fit=crop" alt="مساحة عشب طبيعية">
+                <div>
+                    <h3><i class="fa-solid fa-leaf"></i> عشب طبيعي</h3>
+                    <p>مساحات خضراء مخصصة للعب والجري داخل بيئة نظيفة وآمنة.</p>
+                </div>
+            </div>
+
+            <div class="area">
+                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop" alt="ساحات مغلقة">
+                <div>
+                    <h3><i class="fa-solid fa-shield-dog"></i> ساحات مغلقة</h3>
+                    <p>أسوار آمنة تضمن عدم خروج الكلاب مع حرية الحركة داخلها.</p>
+                </div>
+            </div>
+
+            <div class="area">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop" alt="إشراف مستمر">
+                <div>
+                    <h3><i class="fa-solid fa-user-check"></i> إشراف دائم</h3>
+                    <p>متابعة مستمرة من فريق متخصص لضمان السلامة والراحة.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- زر CTA -->
+        <div class="cta">
+            <a href="الصفحة الرئيسية 1.html">رجوع</a>
+        </div>
+
+        <!-- قسم التقييمات -->
+        <div class="reviews">
+            <div class="review">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=100&h=100&fit=crop" alt="كلب سعيد">
+                <p>"أفضل مكان تركت فيه كلبي، كان سعيد وآمن طوال الوقت!"</p>
+            </div>
+            <div class="review">
+                <img src="https://images.unsplash.com/photo-1601758123927-18d9d7c2f5f8?w=100&h=100&fit=crop" alt="كلب يلعب">
+                <p>"المساحات الخارجية رائعة، كلبي استمتع باللعب والجري."</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    © 2026 لوفينغ هومز جميع الحقوق محفوظة
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قائمة طعام الكلاب</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #ffe6cc, #fff0f5);
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #ff7f50;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 2.5rem;
+            color: #fff;
+            font-weight: bold;
+        }
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px;
+            gap: 25px;
+        }
+        .menu-item {
+            background-color: #fff;
+            border-radius: 20px;
+            width: 260px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s;
+        }
+        .menu-item:hover {
+            transform: translateY(-10px);
+        }
+        .menu-item img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #ff7f50;
+        }
+        .menu-item h3 { color: #ff6347; margin: 15px 0 10px; }
+        .menu-item p { color: #666; margin: 5px 0; }
+        .price { font-weight: bold; color: #ff4500; margin: 10px 0; }
+        .order-btn {
+            padding: 10px 20px;
+            background-color: #ff7f50;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        
+        .order-btn:hover { background-color: #ff4500; }
+        
+        /* زر رجوع في الزاوية */
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .back-btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <a href="الصفحة الرئيسية 1.html" class="back-btn">← رجوع</a>
+    <header>🍖 قائمة طعام الكلاب 🍖</header>
+
+    <div class="menu-container">
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg?auto=compress&cs=tinysrgb&w=400" alt="طعام جاف">
+            <h3>الطعام الجاف</h3>
+            <p>مزيج متوازن من البروتين والخضار للحفاظ على صحة كلبك</p>
+            <p class="price">10 دينار</p>
+            <a href="اطلب الان.html"><button class="order-btn">اطلب الآن</button></a>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/4587996/pexels-photo-4587996.jpeg?auto=compress&cs=tinysrgb&w=400" alt="طعام رطب">
+            <h3>الطعام الرطب</h3>
+            <p>وجبة غنية بالماء والنكهات الطبيعية لكلابك</p>
+            <p class="price">12 دينار</p>
+            <a href="اطلب الان.html"><button class="order-btn">اطلب الآن</button></a>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/2607544/pexels-photo-2607544.jpeg?auto=compress&cs=tinysrgb&w=400" alt="وجبات خفيفة">
+            <h3>الوجبات الخفيفة</h3>
+            <p>سناك صحي لتدريب كلبك أو مكافأته</p>
+            <p class="price">5 دينار</p>
+            <a href="اطلب الان.html"><button class="order-btn">اطلب الآن</button></a>
+        </div>
+
+        <div class="menu-item">
+            <img src="https://images.pexels.com/photos/1560807/pexels-photo-1560807.jpeg?auto=compress&cs=tinysrgb&w=400" alt="مكملات غذائية">
+            <h3>المكملات الغذائية</h3>
+            <p>فيتامينات ومعادن لضمان نمو صحي وكامل</p>
+            <p class="price">8 دينار</p>
+            <a href="اطلب الان.html"><button class="order-btn">اطلب الآن</button></a>
+        </div>
+        
+        <a href="الصفحة الرئيسية 1.html">
+            <button class="order-btn">رجوع</button>
+        </a>
+    </div>
+</body>
+</html>

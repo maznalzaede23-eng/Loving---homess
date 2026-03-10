@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اطلب الآن - طعام الكلاب</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #ffe6cc, #fff0f5);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .order-form {
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            width: 350px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6347;
+            margin-bottom: 25px;
+        }
+
+        label {
+            display: block;
+            text-align: right;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border-radius: 15px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        button {
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 25px;
+            background-color: #ff7f50;
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff4500;
+        }
+        
+        /* زر رجوع في الزاوية */
+        .back-btn {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background-color: #ff7f50;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+        .back-btn:hover {
+            background-color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <a href="قائمة 2.html" class="back-btn">← رجوع</a>
+    <div class="order-form">
+        <h1>🛒 اطلب الآن</h1>
+        <form>
+            <label for="product">اختر المنتج:</label>
+            <select id="product" required>
+                <option value="">-- اختر المنتج --</option>
+                <option>الطعام الجاف</option>
+                <option>الطعام الرطب</option>
+                <option>الوجبات الخفيفة</option>
+                <option>المكملات الغذائية</option>
+            </select>
+
+            <label for="name">اسمك:</label>
+            <input type="text" id="name" placeholder="الاسم الكامل" required>
+
+            <label for="quantity">الكمية:</label>
+            <input type="number" id="quantity" placeholder="عدد الوحدات" min="1" required>
+
+            <label for="payment">طريقة الدفع:</label>
+            <select id="payment" required>
+                <option value="">-- اختر طريقة الدفع --</option>
+                <option>نقداً عند الاستلام</option>
+                <option>بطاقة ائتمان</option>
+                <option>تحويل بنكي</option>
+            </select>
+
+            <button type="submit">إرسال الطلب</button>
+        </form>
+        
+        <a href="قائمة 2.html" style="display: inline-block; margin-top: 20px; color: #ff7f50; text-decoration: none;">← رجوع</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<title>الأنشطة اليومية والحزم المخصصة</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+
+<style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+        font-family: 'Cairo', sans-serif;
+        direction: rtl;
+        background: linear-gradient(to bottom, #d0f0c0, #ffffff);
+        color: #333;
+    }
+
+    header {
+        background: linear-gradient(90deg, #2E7D32, #1B5E20);
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        box-shadow: 0 6px 25px rgba(0,0,0,0.3);
+        text-transform: uppercase;
+    }
+
+    main { padding: 60px 20px; display: flex; justify-content: center; }
+
+    .container {
+        max-width: 1200px;
+        width: 100%;
+        background: #fff;
+        padding: 50px;
+        border-radius: 25px;
+        box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+    }
+
+    .container h2 {
+        text-align: center;
+        color: #2E7D32;
+        font-size: 42px;
+        margin-bottom: 40px;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .container p { 
+        font-size: 18px; 
+        line-height: 1.8; 
+        color: #555; 
+        text-align: justify; 
+        margin-bottom: 50px; 
+    }
+
+    .activities {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .activity {
+        position: relative;
+        border-radius: 25px;
+        overflow: hidden;
+        cursor: pointer;
+        height: 360px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        font-weight: 600;
+        transition: transform 0.5s, box-shadow 0.5s;
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    .activity::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(to top, rgba(0,0,0,0.6), rgba(0,0,0,0.05));
+        z-index: 0;
+        border-radius: 25px;
+        transition: background 0.5s;
+    }
+
+    .activity h3, .activity p {
+        position: relative;
+        z-index: 1;
+        background-color: rgba(255,255,255,0.85);
+        color: #2E7D32;
+        padding: 10px 15px;
+        border-radius: 15px;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        transition: transform 0.3s, background-color 0.3s;
+    }
+
+    .activity h3 { font-size: 24px; margin-bottom: 10px; }
+    .activity p { font-size: 16px; line-height: 1.5; background-color: rgba(255,255,255,0.75); }
+
+    .activity:hover {
+        transform: translateY(-12px) scale(1.07);
+        box-shadow: 0 25px 60px rgba(0,0,0,0.3);
+    }
+
+    .activity:hover::before {
+        background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.05));
+    }
+
+    .activity:hover h3 { transform: translateY(-5px); background-color: rgba(255,255,255,0.95); }
+    .activity:hover p { background-color: rgba(255,255,255,0.85); }
+
+    .packages {
+        background: #d0f0c0;
+        padding: 40px;
+        border-radius: 25px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.15);
+        text-align: center;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .packages h3 {
+        color: #2E7D32;
+        font-size: 30px;
+        margin-bottom: 20px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    .packages p { font-size: 17px; line-height: 1.8; color: #555; }
+
+    .packages:hover { 
+        transform: translateY(-5px); 
+        box-shadow: 0 20px 50px rgba(0,0,0,0.25); 
+    }
+
+    footer {
+        background-color: #1B5E20;
+        color: #fff;
+        text-align: center;
+        padding: 30px 20px;
+        margin-top: 60px;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    }
+
+@media (max-width: 768px) {
+        header { font-size: 28px; padding: 35px 15px; }
+        .activity { height: 300px; }
+        .activity h3 { font-size: 20px; }
+        .activity p { font-size: 14px; }
+        .packages h3 { font-size: 24px; }
+        .packages p { font-size: 15px; }
+    }
+    
+    /* زر رجوع في الزاوية */
+    .back-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: #2E7D32;
+        color: white;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .back-btn:hover {
+        background-color: #1B5E20;
+    }
+</style>
+</head>
+<body>
+<a href="الصفحة الرئيسية 1.html" class="back-btn">← رجوع</a>
+
+<header>الأنشطة اليومية والحزم المخصصة</header>
+
+<main>
+    <div class="container">
+        <h2>أنشطة يومية ممتعة ومنظمة</h2>
+        <p>
+            يوفر فندق لوفينغ هومز برنامجًا يوميًا متكاملًا للكلاب يشمل أربعة أنشطة يوميًا يتم تنفيذها تحت إشراف مختصين وتشمل المشي واللعب الحر والأنشطة التفاعلية والتمارين الخفيفة مما يساعد على الحفاظ على صحة الكلاب الجسدية والنفسية ويمنحها تجربة مليئة بالمرح والراحة طوال اليوم.
+        </p>
+
+        <div class="activities">
+            <div class="activity" style="background-image: url('https://images.unsplash.com/photo-1558788353-f76d92427f16?w=800&h=600&fit=crop');">
+                <h3>المشي اليومي</h3>
+                <p>جلسات مشي منظمة تساعد على تفريغ الطاقة والحفاظ على اللياقة.</p>
+            </div>
+
+            <div class="activity" style="background-image: url('https://images.unsplash.com/photo-1601758123927-18d9d7c2f5f8?w=800&h=600&fit=crop');">
+                <h3>اللعب التفاعلي</h3>
+                <p>أنشطة ذهنية وحركية لتنشيط الكلاب وتحفيزها.</p>
+            </div>
+            
+            <div class="activity" style="background-image: url('https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&h=600&fit=crop');">
+                <h3>تمارين خفيفة</h3>
+                <p>تمارين مناسبة لكل الأعمار والقدرات البدنية.</p>
+            </div>
+
+        <div class="packages">
+            <h3>الحزم المخصصة</h3>
+            <p>
+                تتوفر حزم مخصصة للإقامات الطويلة أو للكلاب ذات المتطلبات الإضافية حيث يتم تخصيص عدد الأنشطة ونوعها ومستوى العناية حسب احتياجات كل كلب لضمان أعلى مستوى من الراحة والاهتمام والرعاية طوال فترة الإقامة.
+            </p>
+            <div style="margin-top: 30px;">
+                <a href="الصفحة الرئيسية 1.html" style="background: #2E7D32; color: white; padding: 15px 40px; border-radius: 10px; text-decoration: none; font-size: 18px;">رجوع</a>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>© 2026 لوفينغ هومز جميع الحقوق محفوظة</footer>
+
+</body>
+</html>

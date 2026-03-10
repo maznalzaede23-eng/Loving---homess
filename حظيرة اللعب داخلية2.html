@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>حظيرة اللعب الداخلية - لوفينغ هومز</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl;
+    background: linear-gradient(to bottom, #E8F5E9, #ffffff);
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20);
+    color: white;
+    text-align: center;
+    padding: 35px 20px;
+    font-size: 32px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+nav {
+    background-color: #1B5E20;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    padding: 12px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.play-area {
+    background: white;
+    max-width: 1200px;
+    width: 100%;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.play-area h2 {
+    text-align: center;
+    color: #2E7D32;
+    font-size: 36px;
+    margin-bottom: 25px;
+    position: relative;
+}
+.play-area h2::after {
+    content: '';
+    width: 90px;
+    height: 4px;
+    background-color: #1B5E20;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.play-area p {
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 40px;
+    font-size: 18px;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.feature {
+    background: #E8F5E9;
+    padding: 0;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: 0 12px 25px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.feature img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.feature:hover img {
+    transform: scale(1.05);
+}
+
+.feature-content {
+    padding: 20px;
+}
+
+.feature-content i {
+    font-size: 40px;
+    color: #2E7D32;
+    margin-bottom: 12px;
+}
+
+.feature-content h3 {
+    color: #1B5E20;
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.feature-content p {
+    font-size: 16px;
+    color: #333;
+}
+
+.feature:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 18px 40px rgba(0,0,0,0.15);
+    background: #C8E6C9;
+}
+
+footer {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20);
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+    font-size: 1em;
+    margin-top: 50px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+@media screen and (max-width: 768px) {
+    header { font-size: 28px; padding: 30px 15px; }
+    .play-area h2 { font-size: 28px; }
+    .play-area p { font-size: 16px; }
+    .feature-content h3 { font-size: 20px; }
+    .feature-content i { font-size: 35px; }
+}
+
+/* زر رجوع في الزاوية */
+.back-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #2E7D32;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+}
+.back-btn:hover {
+    background-color: #1B5E20;
+}
+</style>
+</head>
+<body>
+    <a href="الصفحة الرئيسية 1.html" class="back-btn">← رجوع</a>
+
+<header>
+    حظيرة اللعب الداخلية - لوفينغ هومز
+</header>
+
+<nav>
+    <a href="الصفحة الرئيسية 1.html">الرئيسية</a>
+</nav>
+
+<main>
+    <div class="play-area">
+        <h2>حظيرة لعب داخلية آمنة وممتعة</h2>
+        <p>
+            توفر لوفينغ هومز حظيرة لعب داخلية مصممة خصيصًا لتوفير بيئة آمنة وممتعة للكلاب داخل الفندق حيث يمكنهم اللعب والتفاعل وممارسة الأنشطة اليومية في جميع الأوقات بغض النظر عن حالة الطقس مع إشراف مستمر من فريق مختص لضمان السلامة والراحة.
+        </p>
+
+        <div class="features">
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400&h=300&fit=crop" alt="بيئة آمنة">
+                <div class="feature-content">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>بيئة آمنة</h3>
+                    <p>أرضيات مخصصة ومواد آمنة تمنع الانزلاق وتحافظ على سلامة الكلاب.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1601758123927-18d9d7c2f5f8?w=400&h=300&fit=crop" alt="ألعاب تفاعلية">
+                <div class="feature-content">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>ألعاب تفاعلية</h3>
+                    <p>ألعاب متنوعة لتنمية النشاط البدني والذهني وتعزيز التفاعل.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=300&fit=crop" alt="إشراف دائم">
+                <div class="feature-content">
+                    <i class="fas fa-user-check"></i>
+                    <h3>إشراف دائم</h3>
+                    <p>متابعة مستمرة من فريق مدرب لضمان راحة وسعادة الكلاب.</p>
+                </div>
+            </div>
+
+            <div class="feature">
+                <img src="https://images.unsplash.com/photo-1558788353-f76d92427f16?w=400&h=300&fit=crop" alt="نشاط طوال اليوم">
+                <div class="feature-content">
+                    <i class="fas fa-clock"></i>
+                    <h3>نشاط طوال اليوم</h3>
+                    <p>إمكانية اللعب والحركة في أي وقت خلال اليوم دون قيود.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div style="text-align: center; margin-top: 40px;">
+            <a href="الصفحة الرئيسية 1.html" style="background: #2E7D32; color: white; padding: 15px 30px; border-radius: 10px; text-decoration: none; font-size: 18px;">رجوع</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    حقوق الطبع والنشر © 2026 لوفينغ هومز
+</footer>
+
+</body>
+</html>

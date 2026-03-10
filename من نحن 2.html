@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوفينغ هومز - من نحن</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+    /* الخطوط والألوان الأساسية */
+    body {
+        font-family: 'Cairo', sans-serif;
+        background: linear-gradient(to bottom, #e8f5e9, #ffffff);
+        margin: 0;
+        padding: 0;
+        direction: rtl;
+        color: #333;
+    }
+
+    /* الهيدر */
+    header {
+        background: linear-gradient(90deg, #2E7D32, #1B5E20);
+        color: #fff;
+        text-align: center;
+        padding: 50px 20px;
+        font-size: 34px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    }
+
+    /* القائمة */
+    nav {
+        background-color: #1B5E20;
+        display: flex;
+        justify-content: center;
+        gap: 25px;
+        padding: 15px 0;
+    }
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 16px;
+        transition: color 0.3s, text-decoration 0.3s;
+    }
+    nav a:hover {
+        color: #A5D6A7;
+        text-decoration: underline;
+    }
+
+    /* المحتوى الرئيسي */
+    main {
+        padding: 60px 20px;
+    }
+
+    /* بطاقة القسم */
+    .about-section {
+        max-width: 1000px;
+        margin: 0 auto;
+        background: #ffffff;
+        padding: 45px;
+        border-radius: 25px;
+        box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .about-section:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+    }
+
+    /* العنوان */
+    .about-section h2 {
+        color: #2E7D32;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    }
+
+    /* الفقرات */
+    .about-section p {
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 25px;
+        font-size: 17px;
+    }
+
+    /* الصور */
+    .about-images {
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .about-images img {
+        width: 300px;
+        border-radius: 15px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        transition: transform 0.3s, box-shadow 0.3s;
+        cursor: pointer;
+    }
+    .about-images img:hover {
+        transform: scale(1.07);
+        box-shadow: 0 15px 40px rgba(0,0,0,0.25);
+    }
+
+    /* الفوتر */
+    footer {
+        background-color: #2E7D32;
+        color: white;
+        text-align: center;
+        padding: 25px 20px;
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 16px;
+        box-shadow: 0 -5px 20px rgba(0,0,0,0.1);
+    }
+
+    /* متجاوب */
+    @media(max-width:700px){
+        .about-images img { width: 90%; }
+        .about-section { padding: 35px; }
+        header { font-size: 28px; padding: 40px 15px; }
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1>من نحن - لوفينغ هومز</h1>
+</header>
+
+<nav>
+    <a href="الصفحة الرئيسية.html">الرئيسية</a>
+</nav>
+
+<main>
+    <div class="about-section">
+        <h2>رؤيتنا ومهمتنا</h2>
+        <p>
+            نحن في لوفينغ هومز نقدم أفضل رعاية للكلاب منذ تأسيسنا. يهدف فريقنا إلى توفير بيئة آمنة ومريحة لحيواناتكم الأليفة مع تقديم خدمات عالية الجودة تشمل الإقامة الصحية، المنتجات الممتازة، والعناية البيطرية. نحن نؤمن بأن كل كلب يستحق العناية والحب ونلتزم باستخدام أحدث تقنيات المعلومات لتسهيل التواصل مع عملائنا وتقديم تجربة مميزة لكل زائر.
+        </p>
+        <p>
+            نحرص على تقديم تجربة فريدة للزوار مع الاهتمام بأدق التفاصيل من غرف مريحة وصحية للكلاب إلى منتجات عالية الجودة وألعاب تعليمية وترفيهية. كما نعمل على تحسين استخدام التكنولوجيا لزيادة سهولة الحجز والتواصل مع العملاء ومتابعة احتياجات حيواناتهم الأليفة بسرعة وكفاءة.
+        </p>
+        
+    </div>
+</main>
+
+<footer>
+    حقوق الطبع والنشر &copy; 2026 لوفينغ هومز
+</footer>
+
+</body>
+</html>

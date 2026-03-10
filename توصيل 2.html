@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>لوفينغ هومز - خدمة التوصيل الفاخرة</title>
+    <style>
+        /* إعدادات عامة */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to bottom, #e0f7fa, #ffffff);
+            direction: rtl;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* رأس الصفحة */
+        header {
+            background: #00695c;
+            color: #ffffff;
+            text-align: center;
+            padding: 40px 20px;
+            font-size: 28px;
+            letter-spacing: 1px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        /* شريط التنقل */
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #004d40;
+            padding: 12px 0;
+            gap: 25px;
+        }
+        nav a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background: #00796b;
+            color: #ffffff;
+            transform: scale(1.1);
+        }
+
+        /* المحتوى الرئيسي */
+        main {
+            display: flex;
+            justify-content: center;
+            padding: 50px 20px;
+        }
+        .delivery-card {
+            background: #ffffff;
+            max-width: 1000px;
+            width: 100%;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            padding: 50px 30px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .delivery-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.15);
+        }
+        .delivery-card h2 {
+            color: #00796b;
+            font-size: 36px;
+            margin-bottom: 25px;
+        }
+        .delivery-card p {
+            color: #555555;
+            font-size: 18px;
+            margin-bottom: 35px;
+        }
+
+        /* صور الخدمة */
+        .images-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .images-container img {
+            width: 300px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .images-container img:hover {
+            transform: scale(1.07);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        }
+
+        /* تذييل الصفحة */
+        footer {
+            background: #00695c;
+            color: #ffffff;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+            font-size: 16px;
+        }
+
+        /* تصميم متجاوب */
+        @media(max-width: 1024px) {
+            .delivery-card {
+                padding: 40px 25px;
+            }
+            .delivery-card h2 {
+                font-size: 30px;
+            }
+        }
+        @media(max-width:768px){
+            .images-container img {
+                width: 90%;
+            }
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        خدمة التوصيل الفاخرة من وإلى الفندق - لوفينغ هومز
+    </header>
+    <nav>
+        <a href="الصفحة الرئيسية.html">الرئيسية</a>
+        <a href="#">خدماتنا</a>
+        <a href="#">الحجز</a>
+        <a href="#">تواصل معنا</a>
+    </nav>
+    <main>
+        <div class="delivery-card">
+            <h2>خدمة التوصيل المريحة والآمنة</h2>
+            <p>
+                نقدم خدمة التوصيل الفاخرة للكلاب من وإلى منازل العملاء لضمان الراحة والأمان. سيارات مجهزة خصيصاً لتوفير بيئة هادئة ومريحة للحيوانات مع متابعة فريقنا أثناء النقل لضمان سلامتهم. يمكنكم حجز الخدمة بسهولة عبر الموقع أو الاتصال بالفندق. هذه الخدمة تمنح كلابكم تجربة نقل مميزة وآمنة دون أي إجهاد.
+            </p>
+            <div class="images-container">
+                <img src="توصيل.webp" alt="سيارة التوصيل الفاخرة">
+                <img src="مازن حيوان.webp" alt="خدمة النقل المريحة">
+                <img src="متابعة مازن.webp" alt="المتابعة أثناء النقل">
+            </div>
+        </div>
+    </main>
+    <footer>
+        حقوق الطبع والنشر &copy; 2026 لوفينغ هومز
+    </footer>
+</body>
+</html>

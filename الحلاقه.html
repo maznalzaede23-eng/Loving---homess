@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>صالون حلاقة الكلاب - تصميم احترافي</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Cairo', sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #7ed957, #2e7d32);
+        color: #fff;
+    }
+    header {
+        text-align: center;
+        padding: 40px 0;
+        font-size: 3rem;
+        font-weight: 700;
+        text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+    }
+    .services-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 35px;
+        padding: 50px 20px;
+        max-width: 1200px;
+        margin: auto;
+    }
+    .service-item {
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 25px;
+        padding: 25px 15px;
+        text-align: center;
+        backdrop-filter: blur(6px);
+        transition: transform 0.4s, box-shadow 0.4s;
+        cursor: pointer;
+    }
+    .service-item:hover {
+        transform: translateY(-12px) scale(1.05);
+        box-shadow: 0 18px 35px rgba(0,0,0,0.5);
+    }
+    .service-item img {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid #c8f2c8;
+        margin-bottom: 15px;
+        transition: transform 0.4s;
+    }
+    .service-item:hover img {
+        transform: scale(1.15) rotate(5deg);
+    }
+    .service-item h3 {
+        margin: 12px 0 8px;
+        font-size: 1.4rem;
+        color: #e8f5e9;
+    }
+    .service-item p {
+        font-size: 1rem;
+        margin: 6px 0;
+        color: #d0f0c0;
+        line-height: 1.4;
+    }
+    .price {
+        font-weight: bold;
+        font-size: 1.4rem;
+        margin: 12px 0;
+        color: #a5d6a7;
+    }
+    
+    /* زر رجوع في الزاوية */
+    .back-btn {
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        background-color: white;
+        color: #2e7d32;
+        padding: 12px 25px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-weight: bold;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        z-index: 1000;
+    }
+    .back-btn:hover {
+        background-color: #e8f5e9;
+    }
+</style>
+</head>
+<body>
+    <a href="الصفحة الرئيسية 1.html" class="back-btn">← رجوع</a>
+<header>✂️ صالون حلاقة الكلاب ✂️</header>
+
+<div class="services-container">
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1516734212186-a967f81ad0d7?w=400&h=400&fit=crop" alt="قص الشعر">
+        <h3>قص الشعر</h3>
+        <p>تصفيف شعر كلبك بطريقة آمنة وأنيقة.</p>
+        <p class="price">15 دينار</p>
+    </div>
+
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?w=400&h=400&fit=crop" alt="قص الأظافر">
+        <h3>قص الأظافر</h3>
+        <p>قص الأظافر بدقة لتجنب أي جروح.</p>
+        <p class="price">5 دينار</p>
+    </div>
+
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=400&h=400&fit=crop" alt="تنظيف الأذن">
+        <h3>تنظيف الأذن</h3>
+        <p>تنظيف آمن وصحي لأذن كلبك.</p>
+        <p class="price">7 دينار</p>
+    </div>
+
+    <div class="service-item">
+        <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?w=400&h=400&fit=crop" alt="حمام">
+        <h3>حمام كلب</h3>
+        <p>استحمام مع شامبو خاص لنوع فرو كلبك.</p>
+        <p class="price">10 دينار</p>
+    </div>
+    
+    <div style="text-align: center; width: 100%; margin-top: 30px;">
+        <a href="الصفحة الرئيسية 1.html" style="background: white; color: #2e7d32; padding: 15px 40px; border-radius: 25px; text-decoration: none; font-size: 18px; font-weight: bold;">رجوع</a>
+    </div>
+</div>
+</body>
+</html>
