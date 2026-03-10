@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لوفينغ هومز - فندق الكلاب</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    line-height: 1.6;
+}
+
+/* رأس الصفحة */
+header {
+    background: linear-gradient(90deg, #2E7D32, #1B5E20);
+    color: white;
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+header h1 {
+    margin: 0;
+    font-size: 2.2em;
+}
+
+/* قائمة التنقل */
+nav {
+    background-color: #1B5E20;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 18px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+nav a:hover {
+    background-color: #2E7D32;
+    transform: scale(1.05);
+}
+
+/* المحتوى الرئيسي */
+main {
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: auto;
+}
+section {
+    margin-bottom: 35px;
+}
+h2 {
+    color: #2E7D32;
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #2E7D32;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* شريط الصور Carousel */
+.carousel {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+.carousel img {
+    width: 100%;
+    display: none;
+    border-radius: 15px;
+}
+.carousel img.active {
+    display: block;
+}
+
+/* أزرار التنقل */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(46,125,50,0.7);
+    color: white;
+    font-size: 2em;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.3s;
+}
+.prev:hover, .next:hover {
+    background-color: rgba(46,125,50,1);
+}
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* بطاقات الخدمات */
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.service-card {
+    background-color: white;
+    width: 300px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+.service-card img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.service-card h3 {
+    margin: 10px 0;
+    font-size: 1.4em;
+    color: #1B5E20;
+}
+.service-card p {
+    font-size: 1em;
+    color: #555;
+}
+
+/* اتصل بنا */
+.contact {
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.contact a {
+    color: #2E7D32;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 0 10px;
+}
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* الفوتر */
+footer {
+    background-color: #2E7D32;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.95em;
+}
+
+/* تجاوب */
+@media screen and (max-width: 768px) {
+    nav { flex-direction: column; }
+    nav a { width: 80%; text-align: center; }
+    .services-container { flex-direction: column; align-items: center; }
+    header h1 { font-size: 1.8em; }
+    h2 { font-size: 1.5em; }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>لوفينغ هومز - فندق الكلاب في هونغ كونغ</h1>
+</header>
+
+<nav>
+    <a href="الصفحة الرئيسية.html">عن الفندق</a>
+    <a href="من نحن 2.html">من نحن</a>
+    <a href="الاتصال بنا 2.html">اتصل بنا</a>
+    <a href="الحلاقه.html">صالون الحلاقة</a>
+    <a href="توصيل 2.html">خدمة التوصيل</a>
+    <a href="مكافات2.html">مكافآت</a>
+    <a href="حظيرة اللعب داخلية2.html">حظيرة ألعاب داخلية</a>
+    <a href="ميزات 2.html">ميزات</a>
+    <a href="مراعي خارجية امنه2.html">مراعي خارجية آمنة</a>
+    <a href="الخدمات 1.html">الخدمات</a>
+        <a href="قائمة الطعام.html">قائمة طعام</a>
+
+</nav>
+
+<main>
+    <!-- شريط الصور -->
+    <section id="gallery">
+        <h2>معرض الصور</h2>
+        <div class="carousel">
+            <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" class="active" alt="كلب 1">
+            <img src="https://images.pexels.com/photos/4587996/pexels-photo-4587996.jpeg" alt="كلب 2">
+            <img src="https://images.pexels.com/photos/4587997/pexels-photo-4587997.jpeg" alt="كلب 3">
+            <div class="prev">&#10094;</div>
+            <div class="next">&#10095;</div>
+        </div>
+    </section>
+
+    <!-- عن الفندق -->
+    <section id="about">
+        <h2>عن الفندق</h2>
+        <p>لوفينغ هومز هو فندق مخصص لرعاية الكلاب في هونغ كونغ. نسعى لتوفير أفضل الخدمات لراحة وصحة الكلاب مع أحدث وسائل التكنولوجيا لتسهيل تجربة العملاء.</p>
+    </section>
+
+    <!-- الخدمات -->
+    <section id="services">
+        <h2>الخدمات والمرافق</h2>
+        <div class="services-container">
+            <div class="service-card">
+                <img src="https://images.pexels.com/photos/1805164/pexels-photo-1805164.jpeg" alt="إقامة للكلاب">
+                <h3>إقامة للكلاب</h3>
+                <p>غرف مجهزة بأعلى معايير الراحة والنظافة لتضمن سعادة حيوانك الأليف.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.pexels.com/photos/4587996/pexels-photo-4587996.jpeg" alt="منتجات الحيوانات الأليفة">
+                <h3>منتجات الحيوانات الأليفة</h3>
+                <p>طعام، ألعاب، وأكسسوارات مختارة بعناية لكلابك.</p>
+            </div>
+            <div class="service-card">
+                <img src="https://images.pexels.com/photos/4587997/pexels-photo-4587997.jpeg" alt="الرعاية البيطرية">
+                <h3>الرعاية البيطرية</h3>
+                <p>خدمات صحية شاملة وفحوصات دورية لضمان صحة وسعادة حيوانك.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- اتصل بنا -->
+    <section id="contact" class="contact">
+        <h2>اتصل بنا</h2>
+        <p>للاستفسار والحجز يرجى التواصل معنا عبر:</p>
+        <p>
+            <a href="mailto:info@lovinghomes.com"><i class="fas fa-envelope"></i> info@lovinghomes.com</a> |
+            <a href="tel:0000975"><i class="fas fa-phone"></i> 0000975</a>
+        </p>
+    </section>
+</main>
+
+<footer>
+    حقوق الطبع والنشر &copy; 2026 لوفينغ هومز
+</footer>
+
+<script>
+// Carousel
+let index = 0;
+const slides = document.querySelectorAll(".carousel img");
+const prev = document.querySelector(".prev");
+const next = document.querySelector(".next");
+
+function showSlide(i){
+    slides.forEach((slide)=> slide.classList.remove("active"));
+    slides[i].classList.add("active");
+}
+
+prev.addEventListener("click", ()=>{
+    index = (index - 1 + slides.length) % slides.length;
+    showSlide(index);
+});
+next.addEventListener("click", ()=>{
+    index = (index + 1) % slides.length;
+    showSlide(index);
+});
+</script>
+
+</body>
+</html>
